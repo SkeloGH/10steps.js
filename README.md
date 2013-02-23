@@ -9,17 +9,17 @@ Usage
 If you want to add a new effect, you can just do the following:
 
 fx.myNewEffect = {
-		step0: 'your transform effect at 0%',
-		step1: 'your transform effect at 10%',
-		step2: 'your transform effect at 20%',
-		step3: 'your transform effect at 30%',
-		step4: 'your transform effect at 40%',
-		step5: 'your transform effect at 50%',
-		step6: 'your transform effect at 60%',
-		step7: 'your transform effect at 70%',
-		step8: 'your transform effect at 80%',
-		step9: 'your transform effect at 90%',
-		step10: 'your transform effect at 100%'
+		step0: 'your transform effect at 0%',\
+		step1: 'your transform effect at 10%',\
+		step2: 'your transform effect at 20%',\
+		step3: 'your transform effect at 30%',\
+		step4: 'your transform effect at 40%',\
+		step5: 'your transform effect at 50%',\
+		step6: 'your transform effect at 60%',\
+		step7: 'your transform effect at 70%',\
+		step8: 'your transform effect at 80%',\
+		step9: 'your transform effect at 90%',\
+		step10: 'your transform effect at 100%'\
 	}
 	
 Example
