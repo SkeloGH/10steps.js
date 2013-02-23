@@ -1,12 +1,42 @@
 10steps.js
 ==========
 
-pre-defined animations using 10 animation steps
+Pre-defined animations using 10 animation steps, based on the work of this 2 guys:
+
+Daniel Eden
+http://daneden.me/animate/
+
+Louis Remi
+http://louisremi.github.com/jquery.transform.js/index.html
+
+Included animations
+	- Bounce
+	- Shake
+	- Tada
+	- Swing
+	- Wobble
+	- Wiggle
+	- Pulse
+	- Bounce in
+	- Bounce in up
+	- Bounce in down
+	- Bounce in left
+	- Bounce in right
+	- Lightspeed in
+	- Roll in
+	- Roll out
+
 
 Usage
 ==========
 
-If you want to add a new effect, you can just do the following:
+var $element = $('.myClass'); // your jQuery selector <br>
+var chosenFx = 'rollOut'; // the effect name camelCased <br>
+
+$element.animate(fxPattern[0], fxPattern[1], fxPattern[2]); // wherever you want it to be triggered
+
+
+If you want to override/add an effect, you can just do the following:
 
 fx.myNewEffect = {<br>
 		step0: 'your transform effect at 0%',<br>
@@ -21,21 +51,14 @@ fx.myNewEffect = {<br>
 		step9: 'your transform effect at 90%',<br>
 		step10: 'your transform effect at 100%'<br>
 	}
+
+That's it.
 	
 Example
 ==========
-Override default bouncing effect:
-
-fx.bounce = {<br>
-		step0: 'translateY(0px)',<br>
-		step1: 'translateY(1px)',<br>
-		step2: 'translateY(2px)',<br>
-		step3: 'translateY(3px)',<br>
-		step4: 'translateY(-30px)',<br>
-		step5: 'translateY(0px)',<br>
-		step6: 'translateY(-15px)',<br>
-		step7: 'translateY(-14px)',<br>
-		step8: 'translateY(-12px)',<br>
-		step9: 'translateY(-5px)',<br>
-		step10: 'translateY(0px)'<br>
-	}
+var $element = $('.myClass');<br>
+var chosenFx = 'bounceInRight';<br>
+// let's bind it to some button
+$('.myButton').on('click', function() {
+	$element.animate(fxPattern[0], fxPattern[1], fxPattern[2]); // wherever you want it to be triggered
+});
