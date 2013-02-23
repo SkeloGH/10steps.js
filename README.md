@@ -10,20 +10,20 @@ Louis Remi
 http://louisremi.github.com/jquery.transform.js/index.html
 
 Included animations
-	- Bounce
-	- Shake
-	- Tada
-	- Swing
-	- Wobble
-	- Wiggle
-	- Pulse
-	- Bounce in
-	- Bounce in up
-	- Bounce in down
-	- Bounce in left
-	- Bounce in right
-	- Lightspeed in
-	- Roll in
+	- Bounce<br>
+	- Shake<br>
+	- Tada<br>
+	- Swing<br>
+	- Wobble<br>
+	- Wiggle<br>
+	- Pulse<br>
+	- Bounce in<br>
+	- Bounce in up<br>
+	- Bounce in down<br>
+	- Bounce in left<br>
+	- Bounce in right<br>
+	- Lightspeed in<br>
+	- Roll in<br>
 	- Roll out
 
 
@@ -61,7 +61,7 @@ Example
 ==========
 var $element = $('.myClass');<br>
 var chosenFx = 'bounceInRight';<br>
-// let's bind it to some button
-$('.myButton').on('click', function() {
-	$element.animate(fxPattern[0], fxPattern[1], fxPattern[2]); // wherever you want it to be triggered
+// let's bind it to some button<br>
+$('.myButton').on('click', function() {<br>
+	$element.animate(fxPattern[0], fxPattern[1], fxPattern[2]); // wherever you want it to be triggered<br>
 });
