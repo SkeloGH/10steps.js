@@ -30,6 +30,9 @@ Included animations
 Usage
 ==========
 
+1. Download and set the jQuery transfrom plugin from http://louisremi.github.com/jquery.transform.js/index.html
+
+2. Change these 2 vars to fit your needs
 var $element = $('.myClass'); // your jQuery selector <br>
 var chosenFx = 'rollOut'; // the effect name camelCased <br>
 
