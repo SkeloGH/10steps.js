@@ -1,6 +1,3 @@
-var duration = 2000;
-var $element = $('#basic1');
-var chosenFx = 'rollOut';
 var fx = {
 	bounce: {
 		step0: 'translateY(0px)',
@@ -198,48 +195,13 @@ var fx = {
 		step10: ''
 	}
 }
-var fxPattern = [{
-	transform: fx[chosenFx].step0
-}, duration/10, function(){
-	$element.animate({
-		transform: fx[chosenFx].step1
-	}, duration/10, function(){
-		$element.animate({
-			transform: fx[chosenFx].step2
-		}, duration/10, function(){
-			$element.animate({
-				transform: fx[chosenFx].step3
-			}, duration/10, function(){
-				$element.animate({
-					transform: fx[chosenFx].step4
-				}, duration/10, function(){
-					$element.animate({
-						transform: fx[chosenFx].step5
-					}, duration/10, function(){
-						$element.animate({
-							transform: fx[chosenFx].step6
-						}, duration/10, function(){
-							$element.animate({
-								transform: fx[chosenFx].step7
-							}, duration/10, function(){
-								$element.animate({
-									transform: fx[chosenFx].step8
-								}, duration/10, function(){
-									$element.animate({
-										transform: fx[chosenFx].step9
-									}, duration/10, function(){
-										$element.animate({
-											transform: fx[chosenFx].step10
-										}, duration/10);
-									});
-								});
-							});
-						});
-					});
-				});
-			});
-		});
-	});
-}]
 
-$element.animate(fxPattern[0], fxPattern[1], fxPattern[2]);
+var duration = 2000;
+var $element = $('#basic1');
+var tenSteps = function(chosenFx, i){
+	setTimeout(function(){
+		tenSteps(chosenFx, i+1);
+	}, duration/steps);
+}
+
+tenSteps('rollOut');
