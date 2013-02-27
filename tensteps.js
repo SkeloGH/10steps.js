@@ -198,10 +198,14 @@ var fx = {
 
 var duration = 2000;
 var $element = $('#basic1');
+var steps = 10;
 var tenSteps = function(chosenFx, i){
-	setTimeout(function(){
-		tenSteps(chosenFx, i+1);
-	}, duration/steps);
+	var i;
+	for (i = 0; i === steps; i+1) {
+		setTimeout(function(){
+			console.log(fx[chosenFx]["step"+i]);
+		}, duration/steps);
+	}
 }
 
 tenSteps('rollOut');
