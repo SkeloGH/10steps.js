@@ -199,12 +199,21 @@ var fx = {
 var duration = 2000;
 var $element = $('#basic1');
 var steps = 10;
-var tenSteps = function(chosenFx, i){
-	var i;
-	for (i = 0; i === steps; i+1) {
-		setTimeout(function(){
-			console.log(fx[chosenFx]["step"+i]);
-		}, duration/steps);
+var chosenFx = "lightSpeedIn";
+var randomArray = [];
+var tenSteps = function(chosenFx){
+	
+	for (var i = 0; i < steps; i++) {
+		var walkSteps = window.setTimeout(function(){
+            var currentStep = "step"+i;
+			
+            
+            document.write(currentStep+"<br>");
+            document.write(i);
+            document.write(fx[chosenFx][currentStep]+"<br>");
+            randomArray.push(i);
+            document.write(randomArray+"<br>");
+		}, 2000);
 	}
 }
 
