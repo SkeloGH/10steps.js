@@ -238,7 +238,8 @@ var fx = {
         'step10': {'left':'0'}
     }
 }
- var applyFx = function () {
+
+var applyFx = function () {
     var attentionApp    =   this,
     	$element 		= 	$('.selector'),
         chosenFx        =   'bounceInLeft',
