@@ -241,7 +241,7 @@ var fx = {
 
 var applyFx = function () {
     var attentionApp    =   this,
-    	$element 		= 	$('.selector'),
+    	$element        =   $('.selector'),
         chosenFx        =   'bounceInLeft',
         steps           =   10,
         duration        =   tenSteps.fx[chosenFx].duration / steps,
